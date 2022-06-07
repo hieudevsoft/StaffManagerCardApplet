@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">StaffManagerAppletApp</string>
+    <string name="no_internet">Kiểm tra lại kết nối mạng</string>
+</resources>

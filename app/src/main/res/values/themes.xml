@@ -1,0 +1,54 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.StaffManagerAppletApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorText_Day_2</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/colorAccent</item>
+        <item name="colorSecondaryVariant">@color/colorText_Night</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimary</item>
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="toast_success">
+        <item name="stTextBold">false</item>
+        <item name="stTextColor">#fff</item>
+        <item name="stFont">@font/svn_avo_bold</item>
+        <item name="stTextSize">13sp</item>
+        <item name="stColorBackground">@color/colorPrimary</item>
+        <item name="stSolidBackground">true</item>
+        <item name="stIconStart">@drawable/ic_tick_2</item>
+        <item name="stLength">SHORT</item>
+        <item name="stGravity">center</item>
+        <item name="stRadius">30dp</item>
+    </style>
+
+    <style name="toast_internet">
+        <item name="stTextBold">false</item>
+        <item name="stTextColor">#fff</item>
+        <item name="stFont">@font/svn_avo_bold</item>
+        <item name="stTextSize">11sp</item>
+        <item name="stColorBackground">@color/yellow</item>
+        <item name="stSolidBackground">true</item>
+        <item name="stIconStart">@drawable/ic_wifi</item>
+        <item name="stLength">SHORT</item>
+        <item name="stGravity">center</item>
+        <item name="stRadius">30dp</item>
+    </style>
+
+    <style name="toast_error">
+        <item name="stTextBold">false</item>
+        <item name="stTextColor">#fff</item>
+        <item name="stFont">@font/svn_avo_bold</item>
+        <item name="stTextSize">11sp</item>
+        <item name="stColorBackground">@color/colorRed</item>
+        <item name="stSolidBackground">true</item>
+        <item name="stIconStart">@drawable/ic_warning_2</item>
+        <item name="stLength">SHORT</item>
+        <item name="stGravity">center</item>
+        <item name="stRadius">30dp</item>
+    </style>
+</resources>

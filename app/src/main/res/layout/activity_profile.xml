@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:measureAllChildren="true"
+    android:fillViewport="true"
+    tools:context=".ProfileActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/view_container"
+        android:layout_width="match_parent"
+        android:paddingHorizontal="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="54dp"
+        android:layout_height="match_parent">
+        <com.makeramen.roundedimageview.RoundedImageView
+            app:layout_constraintHorizontal_bias=".25"
+            android:id="@+id/img_avatar"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/img_transport"
+            app:riv_corner_radius="20dp"
+            app:riv_border_width="2dp"
+            android:scaleType="centerCrop"
+            app:riv_border_color="@color/colorGray_10"
+            android:src="@drawable/img_person"
+            android:layout_width="120dp"
+            android:layout_height="120dp"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/btn_change_avatar"
+            android:focusable="true"
+            android:clickable="true"
+            app:cardCornerRadius="24dp"
+            app:cardUseCompatPadding="true"
+            app:contentPadding="12dp"
+            android:foreground="?attr/selectableItemBackground"
+            app:layout_constraintStart_toEndOf="@id/img_avatar"
+            app:layout_constraintBottom_toBottomOf="@id/img_avatar"
+            android:layout_marginBottom="-20dp"
+            android:layout_marginStart="-50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:tint="@color/colorPrimary"
+                android:src="@drawable/ic_cam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            app:layout_constraintHorizontal_bias=".75"
+            android:id="@+id/img_transport"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btn_change_avatar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:riv_corner_radius="20dp"
+            app:riv_border_width="2dp"
+            android:scaleType="centerCrop"
+            app:riv_border_color="@color/colorGray_10"
+            android:src="@drawable/img_transport"
+            android:layout_width="120dp"
+            android:layout_height="120dp"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/btn_change_transport"
+            android:focusable="true"
+            android:clickable="true"
+            app:cardCornerRadius="24dp"
+            app:cardUseCompatPadding="true"
+            app:contentPadding="12dp"
+            android:foreground="?attr/selectableItemBackground"
+            app:layout_constraintStart_toEndOf="@id/img_transport"
+            app:layout_constraintBottom_toBottomOf="@id/img_transport"
+            android:layout_marginBottom="-20dp"
+            android:layout_marginStart="-50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:tint="@color/colorPrimary"
+                android:src="@drawable/ic_cam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_change_avatar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="10dp"
+            app:cardUseCompatPadding="true">
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/nested_scroll_view"
+                android:fillViewport="true"
+                android:measureAllChildren="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="24dp"
+                    android:paddingVertical="16dp"
+                    >
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/edt_id_staff"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/ic_round_credit_card_24"
+                        android:hint="Mã số nhân viên"
+                        android:drawablePadding="12dp"
+                        android:fontFamily="@font/svn_avo"
+                        android:paddingVertical="16dp"
+                        android:textCursorDrawable="@null"
+                        android:textSize="12sp" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/edt_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:drawableStart="@drawable/ic_round_person_24"
+                        android:hint="Tên nhân viên"
+                        android:drawablePadding="12dp"
+                        android:fontFamily="@font/svn_avo"
+                        android:paddingVertical="16dp"
+                        android:textCursorDrawable="@null"
+                        android:textSize="12sp" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/edt_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:clickable="false"
+                        android:drawableStart="@drawable/ic_round_attach_email_24"
+                        android:drawablePadding="12dp"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:fontFamily="@font/svn_avo"
+                        android:paddingVertical="16dp"
+                        android:hint="Email"
+                        android:textCursorDrawable="@null"
+                        android:textSize="12sp" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/edt_phone_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:drawableStart="@drawable/ic_round_local_phone_24"
+                        android:drawablePadding="12dp"
+                        android:fontFamily="@font/svn_avo"
+                        android:paddingVertical="16dp"
+                        android:hint="Số điện thoại"
+                        android:inputType="number"
+                        android:textCursorDrawable="@null"
+                        android:textSize="12sp" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/edt_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:drawableStart="@drawable/ic_round_location_on_24"
+                        android:drawablePadding="12dp"
+                        android:fontFamily="@font/svn_avo"
+                        android:hint="Địa chỉ"
+                        android:inputType="text"
+                        android:paddingVertical="16dp"
+                        android:text=""
+                        android:textCursorDrawable="@null"
+                        android:textSize="12sp" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/edt_job"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:drawableStart="@drawable/ic_job"
+                        android:drawablePadding="12dp"
+                        android:fontFamily="@font/svn_avo"
+                        android:inputType="none"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:paddingVertical="16dp"
+                        android:hint="Công việc"
+                        android:textCursorDrawable="@null"
+                        android:textSize="12sp" />
+
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/edt_transport_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:drawableStart="@drawable/ic_round_directions_car_24"
+                        android:drawablePadding="12dp"
+                        android:fontFamily="@font/svn_avo"
+                        android:inputType="text"
+                        android:paddingVertical="16dp"
+                        android:hint="Biển số xe"
+                        android:textCursorDrawable="@null"
+                        android:textSize="12sp" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/edt_dob"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:drawableStart="@drawable/ic_round_calendar_month_24"
+                        android:drawablePadding="12dp"
+                        android:focusable="false"
+                        android:fontFamily="@font/svn_avo"
+                        android:inputType="none"
+                        android:paddingVertical="16dp"
+                        android:hint="Ngày sinh"
+                        android:textCursorDrawable="@null"
+                        android:textSize="12sp" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/edt_day_job"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:drawableStart="@drawable/ic_round_perm_contact_calendar_24"
+                        android:drawablePadding="12dp"
+                        android:focusable="false"
+                        android:fontFamily="@font/svn_avo"
+                        android:inputType="none"
+                        android:paddingVertical="16dp"
+                        android:hint="Ngày làm việc"
+                        android:textCursorDrawable="@null"
+                        android:textSize="12sp" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/edt_tax_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:drawablePadding="12dp"
+                        android:fontFamily="@font/svn_avo"
+                        android:drawableStart="@drawable/ic_round_bookmark_24"
+                        android:inputType="textPassword"
+                        android:paddingVertical="16dp"
+                        android:hint="Mã số thuế"
+                        android:textCursorDrawable="@null"
+                        android:textSize="12sp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_update"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="28dp"
+                        android:fontFamily="@font/svn_avo_bold"
+                        android:text="Cập nhật"
+                        android:textSize="16sp"
+                        android:insetTop="0dp"
+                        android:insetBottom="0dp"
+                        android:visibility="visible"
+                        app:cornerRadius="24dp"
+                        />
+
+                    <com.google.android.material.progressindicator.CircularProgressIndicator
+                        android:id="@+id/circle_loading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:indeterminate="true"
+                        android:max="100"
+                        android:progress="20"
+                        android:visibility="gone"
+                        app:indicatorColor="@color/colorPrimary"
+                        app:indicatorDirectionCircular="clockwise"
+                        app:indicatorInset="2dp"
+                        app:indicatorSize="30dp"
+                        app:trackColor="@color/white"
+                        app:trackCornerRadius="3dp"
+                        app:trackThickness="3dp" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.core.widget.NestedScrollView>
+        </com.google.android.material.card.MaterialCardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#78AB4F</color>
+    <color name="colorAccent">#FABE0E</color>
+
+    <color name="colorBackground_Day">#FAFAFA</color>
+    <color name="colorBackground_Night">#212121</color>
+
+    <color name="colorBackgroundChild_Day">#FFFFFF</color>
+    <color name="colorBackgroundChild_Night">#2C2C2C</color>
+
+    <color name="colorText_Day">#212121</color>
+    <color name="colorText_Night">#FFFFFF</color>
+
+    <color name="colorText_Day_2">#616161</color>
+    <color name="colorText_Night_2">#EEEEEE</color>
+
+    <color name="colorText_Green">#448646</color>
+
+    <color name="color_background_transparent">#96000000</color>
+
+    <color name="colorRed">#EF5350</color>
+    <color name="colorRed_2">#A84551</color>
+    <color name="colorRed_3">#EF4824</color>
+    <color name="colorRed_4">#FF001E</color>
+    <color name="colorRed_5">#DC4E41</color>
+
+    <color name="colorGray">#9E9E9E</color>
+    <color name="colorGray_2">#BDBDBD</color>
+    <color name="colorGray_3">#D4DAD0</color>
+    <color name="colorGray_4">#CFE0E0E0</color>
+    <color name="colorGray_5">#E8F5E9</color>
+    <color name="colorGray_6">#cbcbcb</color>
+    <color name="colorGray_7">#99CBCBCB</color>
+    <color name="colorGray_8">#FAFAFA</color>
+    <color name="colorGray_9">#999999</color>
+    <color name="colorGray_10">#4A4C54</color>
+    <color name="colorGray_11">#e8e8e8</color>
+    <color name="colorGray_12">#757575</color>
+    <color name="colorGray_13">#888888</color>
+    <color name="colorGray_14">#F4F4F4</color>
+
+    <color name="colorProgress_Red">#F44B38</color>
+    <color name="colorProgress_Yellow">#F1D863</color>
+    <color name="colorProgress_Green">#78ab4f</color>
+
+    <color name="colorBackgroundLessonLock_Day">#99E4E4E4</color>
+    <color name="colorBackgroundLessonLock_Night">#99333333</color>
+
+    <color name="colorBackgroundUnitLock_Day">#73FFFFFF</color>
+    <color name="colorBackgroundUnitLock_Night">#59757575</color>
+
+    <color name="colorSky_Day">#EEFAFF</color>
+    <color name="colorSky_Night">#212121</color>
+
+    <color name="colorGreen_2">#3078AB4F</color>
+    <color name="colorYellow_2">#30FABE0E</color>
+
+    <color name="colorGreen_3">#5978AB4F</color>
+    <color name="colorYellow_3">#59FABE0E</color>
+
+    <color name="colorGreen_4">#d9eae2</color>
+    <color name="colorYellow_4">#40FFC107</color>
+
+    <color name="colorGray_alpha_25">#409E9E9E</color>
+    <color name="colorGray_2_alpha_25">#40BDBDBD</color>
+
+    <color name="colorTransparent">#00FFFFFF</color>
+    <color name="colorBlack">#2B241E</color>
+    <color name="colorBlack_5">#1C1C1E</color>
+    <color name="colorBlack_6">#2C2C2E</color>
+
+    <color name="colorGreen_5">#4CAF50</color>
+    <color name="colorGreen_6">#6C9945</color>
+    <color name="colorGreen_7">#5B4CAF50</color>
+    <color name="colorGreen_8">#3f4d36</color>
+
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorWhite_2">#80FFFFFF</color>
+    <color name="colorWhite_3">#E9F1E3</color>
+    <color name="colorWhite_4">#D4DAD0</color>
+    <color name="colorWhite_5">#f4f8f7</color>
+    <color name="colorWhite_6">#AFA9A9</color>
+    <color name="colorWhite_7">#31FFFFFF</color>
+
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="yellow">#FFCA28</color>
+
+    <color name="level_hsk_1">#558b2f</color>
+    <color name="level_hsk_2">#9e9d24</color>
+    <color name="level_hsk_3">#f9a825</color>
+    <color name="level_hsk_4">#ff8f00</color>
+    <color name="level_hsk_5">#ef6c00</color>
+    <color name="level_hsk_6">#d84315</color>
+
+    <color name="colorTextGrayFocusHSK_Light">#474545</color>
+    <color name="colorTextGrayFocusHSK_Night">#808080</color>
+</resources>
